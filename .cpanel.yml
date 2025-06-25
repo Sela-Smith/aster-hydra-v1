@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/selasmith/public_html/  # Ajuste este caminho conforme necessário
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/chmod -R 755 $DEPLOYPATH
+    - /bin/chown -R selasmith:selasmith $DEPLOYPATH  # Ajuste o usuário/grupo conforme necessário
+
+# Configurações adicionais podem ser adicionadas abaixo
+# Por exemplo, você pode adicionar comandos para instalar dependências:
+# install:
+#   - npm install
+#   - npm run build
