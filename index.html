@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>ASTER-HYDRA - Ferramenta de Criação de Múltiplos Usuários</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -26,10 +26,43 @@
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>ASTER-HYDRA</h1>
-            <p class="tagline">A solução definitiva para criação de múltiplos usuários simultâneos</p>
-            <button class="cta-button">Começar Agora</button>
+        <div class="hero-slider">
+            <!-- Slides -->
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>ASTER-HYDRA</h1>
+                    <p class="tagline">A solução definitiva para criação de múltiplos usuários simultâneos</p>
+                    <button class="cta-button">Começar Agora</button>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Produtividade em Massa</h1>
+                    <p class="tagline">Automatize a criação de usuários e economize tempo</p>
+                    <button class="cta-button">Saiba Mais</button>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Segurança Garantida</h1>
+                    <p class="tagline">Tecnologia avançada para proteger seus dados</p>
+                    <button class="cta-button">Conheça Nossos Planos</button>
+                </div>
+                <div class="slide-overlay"></div>
+            </div>
+            
+            <!-- Controles de navegação -->
+            <button class="slider-control prev" aria-label="Slide anterior">❮</button>
+            <button class="slider-control next" aria-label="Próximo slide">❯</button>
+            
+            <!-- Indicadores de slide -->
+            <div class="slider-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
         </div>
     </section>
 
@@ -144,6 +177,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 </html>
