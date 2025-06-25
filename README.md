@@ -2,15 +2,24 @@
 
 Solução para criação de múltiplos usuários simultâneos.
 
+**Domínio Principal:** [https://hydra-lda.com](https://hydra-lda.com)
+
 ## Configuração para cPanel
 
 1. **Configuração do Repositório no cPanel**
-   - Acesse o cPanel da sua hospedagem
+   - Acesse o cPanel da hospedagem em: [https://hydra-lda.com:2083](https://hydra-lda.com:2083)
    - Vá em "Git Version Control"
    - Clique em "Clone a Repository"
    - Cole a URL do repositório: `https://github.com/Sela-Smith/aster-hydra-v1.git`
-   - Defina o diretório de implantação (ex: `public_html`)
+   - Defina o diretório de implantação como: `/home/hydralda/public_html`
    - Clique em "Create"
+
+2. **Configurações do Domínio**
+   - O domínio principal `hydra-lda.com` já está configurado
+   - Redirecionamentos configurados:
+     - HTTP → HTTPS
+     - www → não-www
+     - Todas as rotas para `index.html` (para SPAs)
 
 2. **Configuração de Implantação Automática**
    - O arquivo `.cpanel.yml` já está configurado para implantação automática

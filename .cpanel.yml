@@ -1,10 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/selasmith/public_html/  # Ajuste este caminho conforme necessário
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/chmod -R 755 $DEPLOYPATH
-    - /bin/chown -R selasmith:selasmith $DEPLOYPATH  # Ajuste o usuário/grupo conforme necessário
+    - export DEPLOYPATH=/home/hydralda/public_html/  # Caminho para o diretório público do domínio hydra-lda.com
+    - /bin/rm -rf $DEPLOYPATH/*  # Limpa o diretório de destino
+    - /bin/cp -R * $DEPLOYPATH  # Copia todos os arquivos
+    - /bin/chmod -R 755 $DEPLOYPATH  # Define permissões adequadas
+    - /bin/chown -R hydralda:hydralda $DEPLOYPATH  # Define o proprietário correto
 
 # Configurações adicionais podem ser adicionadas abaixo
 # Por exemplo, você pode adicionar comandos para instalar dependências:
